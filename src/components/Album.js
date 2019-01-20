@@ -13,7 +13,8 @@ class Album extends Component {
     this.state = {
       album: album,
       currentSong: album.songs[0],
-      isPlaying: false
+      isPlaying: false,
+
     };
 
     this.audioElement = document.createElement('audio');
@@ -43,7 +44,19 @@ class Album extends Component {
       if (!isSameSong) { this.setSong(song); }
       this.play();
     }
+
+   handleIcon(song, index) {
+     const isSameSong = this.state.currentSong === song;
+     if (this.state.isPlaying && isSameSong) {
+       document.getElementById('ion icon md-play');
+     } else {
+       if (!isSameSong) { this.setSong(song); }
+        document.getElementById('ion icon md-pause');
+    } else {
+        return index + 1;
+    }
   }
+}
 
   render() {
     return (
@@ -64,14 +77,20 @@ class Album extends Component {
           </colgroup>
           <tbody>
           {this.state.album.songs.map((song, index) => (
-            <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
-             <td>{index + 1}</td>
-             <td>{song.title}</td>
-             <td>{song.duration}</td>
+            <div className="song"
+            key={index}
+            onClick={() => this.handleSongClick(song)}
+            onMouseEnter = {() => this.handleIcon(song)}
+            onMouseLeave = {() => this.handleIcon(song)}
+    //        {this.handleIcon(song, index)}>
+            </div>
+           <tr>
+            <td className="song-number">{index + 1}</td>
+            <td id="icon ion-logo-play"></td>
+            <td id="icon ion-logo-pause"></td>
+            <td>{song.title}></td>
+            <td>{song.duration}</td>
            </tr>
-              )
-            )
-          }
           </tbody>
         </table>
      </section>
