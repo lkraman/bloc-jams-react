@@ -56,12 +56,12 @@ class Album extends Component {
 
     handleIcon(song, index) {
       if (this.state.isPlaying === true && this.state.currentSong === song) {
-        return <span className="icon ion-md-pause" />;
+        return <span className="icon ion-md-pause"></span>;
       } else if (this.state.hover === song) {
-        return <span className="icon ion-md-play" />;
+        return <span className="icon ion-md-play"></span>;
       } else return <span>{index + 1}</span>;
     };
- }
+
 
   render() {
     return (
@@ -91,16 +91,13 @@ class Album extends Component {
             <td>{this.handleIcon(song, index)}</td>
             <td>{song.title}></td>
             <td>{song.duration}</td>
-           </tr>
+            </tr>
+          ))}
           </tbody>
         </table>
      </section>
-            ))}
-           )
-        }
-//      );
-//    }
-
+   )
+ };
 
 
 export default Album;
