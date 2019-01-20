@@ -97,7 +97,8 @@ class Album extends Component {
         </table>
      </section>
    )
- };
+ }
+}
 
 
 export default Album;
