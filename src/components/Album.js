@@ -14,10 +14,11 @@ class Album extends Component {
     this.state = {
       album: album,
       currentSong: album.songs[0],
+      isPlaying: false,
+      hover: false,
       currentTime: 0,
       duration: album.songs[0].duration,
-      isPlaying: false,
-      hover: false
+      currentVolume: 0.2
     };
 
     this.audioElement = document.createElement('audio');
@@ -26,21 +27,26 @@ class Album extends Component {
 
     componentDidMount() {
        this.eventListeners = {
-         timeupdate: e => {
+         timeUpdate: e => {
            this.setState({ currentTime: this.audioElement.currentTime });
          },
-         durationchange: e => {
+         durationChange: e => {
            this.setState({ duration: this.audioElement.duration });
+         },
+         onVolumeChange: e => {
+           this.setState({ currentVolume: this.audioElement.volume });
          }
        };
-       this.audioElement.addEventListener('timeupdate', this.eventListeners.timeupdate);
-       this.audioElement.addEventListener('durationchange', this.eventListeners.durationchange);
+       this.audioElement.addEventListener('timeupdate', this.eventListeners.timeUpdate);
+       this.audioElement.addEventListener('durationChange', this.eventListeners.durationChange);
+       this.audioElement.addEventListener('onVolumeChange', this.eventListeners.onVolumeChange);
      }
 
      componentWillUnmount() {
      this.audioElement.src = null;
-     this.audioElement.removeEventListener('timeupdate', this.eventListeners.timeupdate);
-     this.audioElement.removeEventListener('durationchange', this.eventListeners.durationchange);
+     this.audioElement.removeEventListener('timeUpdate', this.eventListeners.timeUpdate);
+     this.audioElement.removeEventListener('durationChange', this.eventListeners.durationChange);
+     this.audioElement.removeEventListener('onVolumeChange', this.eventListeners.onVolumeChange);
    }
 
   play() {
@@ -108,7 +114,24 @@ class Album extends Component {
      this.setState({ currentTime: newTime });
    }
 
->>>>>>> checkpoint-bloc-jams-react-player-bar-range-inputs
+   handleVolumeChange(e) {
+     const newVolume = e.target.value;
+     this.audioElement.volume = newVolume;
+     this.setState({ currentVolume: newVolume });
+   }
+
+   formatTime(totalSeconds) {
+      if (isNaN(totalSeconds)) {
+        return "-:--";
+      } else {
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds= totalSeconds % 60;
+        const wholeSecond = Math.floor(seconds)
+        return ( minutes + ":" + wholeSecond );
+      }
+    }
+
+>>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
   render() {
     return (
       <section className="album">
@@ -136,7 +159,7 @@ class Album extends Component {
             >
             <td>{this.handleIcon(song, index)}</td>
             <td>{song.title}></td>
-            <td>{song.duration}</td>
+            <td>{this.formatTime(song.duration)}</td>
             </tr>
           ))}
           </tbody>
@@ -145,6 +168,7 @@ class Album extends Component {
         isPlaying={this.state.isPlaying}
         currentSong={this.state.currentSong}
         currentTime={this.audioElement.currentTime}
+        currentVolume={this.audioElement.currentVolume}
         duration={this.audioElement.duration}
         handleSongClick={() => this.handleSongClick(this.state.currentSong)}
         handlePrevClick={() => this.handlePrevClick()}
@@ -152,7 +176,9 @@ class Album extends Component {
 <<<<<<< HEAD
 =======
         handleTimeChange={(e) => this.handleTimeChange(e)}
->>>>>>> checkpoint-bloc-jams-react-player-bar-range-inputs
+        handleVolumeChange={(e) => this.handleVolumeChange(e)}
+        formatTime={(e) => this.formatTime(e)}
+>>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
         />
      </section>
    )
