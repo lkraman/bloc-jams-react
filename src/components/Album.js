@@ -107,7 +107,10 @@ class Album extends Component {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
     handleTimeChange(e) {
      const newTime = this.audioElement.duration * e.target.value;
      this.audioElement.currentTime = newTime;
@@ -131,6 +134,9 @@ class Album extends Component {
       }
     }
 
+<<<<<<< HEAD
+>>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
+=======
 >>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
   render() {
     return (
@@ -174,6 +180,12 @@ class Album extends Component {
         handlePrevClick={() => this.handlePrevClick()}
         handleNextClick={() => this.handleNextClick()}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        handleTimeChange={(e) => this.handleTimeChange(e)}
+        handleVolumeChange={(e) => this.handleVolumeChange(e)}
+        formatTime={(e) => this.formatTime(e)}
+>>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
 =======
         handleTimeChange={(e) => this.handleTimeChange(e)}
         handleVolumeChange={(e) => this.handleVolumeChange(e)}

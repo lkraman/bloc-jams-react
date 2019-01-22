@@ -27,10 +27,13 @@ class PlayerBar extends Component {
            onChange={this.props.handleTimeChange}
          />
 <<<<<<< HEAD
+<<<<<<< HEAD
          <div className="total-time">{this.props.duration}</div>
       </section>
     </section>
 =======
+=======
+>>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
          <div className="total-time">{this.props.formatTime(this.props.duration)}</div>
         </section>
         <section id="volume-control">
@@ -47,6 +50,9 @@ class PlayerBar extends Component {
              <div className="icon ion-md-volume-high"></div>
            </section>
           </section>
+<<<<<<< HEAD
+>>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
+=======
 >>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
     );
   }
