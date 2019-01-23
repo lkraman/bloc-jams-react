@@ -106,11 +106,6 @@ class Album extends Component {
       this.play();
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
     handleTimeChange(e) {
      const newTime = this.audioElement.duration * e.target.value;
      this.audioElement.currentTime = newTime;
@@ -134,10 +129,6 @@ class Album extends Component {
       }
     }
 
-<<<<<<< HEAD
->>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
-=======
->>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
   render() {
     return (
       <section className="album">
@@ -157,7 +148,8 @@ class Album extends Component {
           </colgroup>
           <tbody>
           {this.state.album.songs.map((song, index) => (
-            <tr className="song"
+            <tr
+            className="song"
             key={index}
             onClick={() => this.handleSongClick(song)}
             onMouseEnter = {() => this.handleMouseEnter(song)}
@@ -179,18 +171,9 @@ class Album extends Component {
         handleSongClick={() => this.handleSongClick(this.state.currentSong)}
         handlePrevClick={() => this.handlePrevClick()}
         handleNextClick={() => this.handleNextClick()}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         handleTimeChange={(e) => this.handleTimeChange(e)}
         handleVolumeChange={(e) => this.handleVolumeChange(e)}
         formatTime={(e) => this.formatTime(e)}
->>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
-=======
-        handleTimeChange={(e) => this.handleTimeChange(e)}
-        handleVolumeChange={(e) => this.handleVolumeChange(e)}
-        formatTime={(e) => this.formatTime(e)}
->>>>>>> assignment-bloc-jams-react-player-bar-range-inputs
         />
      </section>
    )
