@@ -5,10 +5,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render(
+  <div className='grid'>
   <BrowserRouter>
     <App />
   </BrowserRouter>
+  </div>
   , document.getElementById('root')
 )
 
