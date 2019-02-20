@@ -1,0 +1,36 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  grid-row: row 2;
+  grid-column: 2;
+  background-color: #444;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	color: #fff;
+	border-radius: 10px;
+	padding: 3rem 3rem 7rem;
+	font-size: 120%;
+	}
+
+.album-details{
+  text-align: right;
+  margin-top: -13rem;
+}
+
+#song-list {
+  text-align: left;
+  margin-top: 4rem;
+}
+
+#album-cover-art {
+  max-height: 12rem;
+  max-width: 17rem;
+
+}
