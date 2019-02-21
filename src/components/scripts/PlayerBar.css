@@ -60,7 +60,7 @@ background:url(/pause.png) no-repeat;
   bottom: -.75rem;
   margin: auto;
   right: 2rem;
- background:url(/images/player-bar-images/volume-high.png) no-repeat;
+ background:url(/images/volume-high.png) no-repeat;
 }
 
 .volume_low {

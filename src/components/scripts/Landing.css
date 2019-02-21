@@ -1,67 +1,50 @@
-.container.landing {
-  margin: 0;
-  padding: 0;
+/*sizing, flexbox, text*/
+.landing-container {
+  position: absolute;
+  width: 100%;
+  z-index: -20;
 }
 
-.hero {
+
+
+.container-image {
   position: relative;
-  min-height: 60rem;
-  background-image: url(/concert_image.jpg);
-  background-position: center center;
-  background-size: cover;
-  margin-top: -7rem;
+  margin-top: -5rem;
+  width: 100%;
+  background-image: url(/images/concert_image.jpg);
   z-index: -10;
 }
 
-.hero-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -5;
-  background-color: #000000;
-  opacity: .6;
-
+#overlay {
+position: relative;
+background-color: #08AEEA;
+background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 60%, #ffffff 95%, #ffffff 99%);
+z-index: 0;
 }
 
 .hero-title {
-  position: relative;
-  font-size: 4rem;
-  line-height: 3rem;
-  text-align: center;
-  top: 40px;
-  margin: 2rem 2rem 2rem 2rem;
-  color: #fff600;
+position: relative;
+  font-size: 5rem;
+  top: 10%;
+  color: blue;
   z-index: 1;
 }
 
-.landing-page-logo {
-  background-image: url(/bloc_jams_logo.png) no-repeat;
-  position: absolute;
-  overflow: hidden;
-  height: 2.5rem;
-  margin-bottom: 1rem 10rem;
-  z-index: 3;
-}
 
-.point-title {
+.selling-points {
   position: relative;
   font-size: 3rem;
-  line-height: 3rem;
-  width: 80%;
-  top: 50px;
-  margin: 2rem 2rem 2rem 2rem;
+  text-align: justify;
   color: #ffffff;
   text-shadow: 2px 2px 2px #656565;
   z-index: 1;
+
 }
 
 .point-description {
   position: relative;
   font-size: 1.5rem;
-  width: 80%;
-  top: 40px;
-  padding: 0rem 2rem 0rem 2rem;
+  text-align: justify;
   color: #ffffff;
-  z-index: 0;
+  z-index: 2;
 }
