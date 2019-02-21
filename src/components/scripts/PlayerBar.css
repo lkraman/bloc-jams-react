@@ -22,7 +22,7 @@ background:url(/pause.png) no-repeat;
   bottom: 25%;
   margin: auto;
   right: 5%;
-  background:url(/images/player-bar-images/Next.png) no-repeat;
+  background:url(/images/Next.png) no-repeat;
 
 }
 
@@ -31,7 +31,7 @@ background:url(/pause.png) no-repeat;
   bottom: 25%;
   margin: auto;
   right: 35%;
- background:url(/images/player-bar-images/previous.png) no-repeat;
+ background:url(/images/previous.png) no-repeat;
 
 }
 

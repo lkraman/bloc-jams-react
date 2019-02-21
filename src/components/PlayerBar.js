@@ -1,21 +1,38 @@
 import React, { Component } from 'react';
+import './scripts/PlayerBar.css';
+import bloc_jams_logo from './images/bloc_jams_logo.png'
+import play from './images/play.png'
+import pause from './images/pause.png'
+import next from './images/next.png'
+import previous from './images/previous.png'
+import volume_high from './images/volume_high.png'
+import volume_low from './images/volume_low.png'
+
+
 
 class PlayerBar extends Component {
   render() {
     return(
-      <section className="player-bar">
-          <section id="buttons">
-         <button id="previous" onClick={this.props.handlePrevClick}>
-           <span className="icon ion-md-skip-backward"></span>
+
+    <section className="player-bar-container">
+      <img className="bloc-logo" src={bloc_jams_logo} alt="Bloc Jams Logo" />
+        <section className="player-bar-control-box">
+
+        <section className="main-buttons">
+         <button className="previous" onClick={this.props.handlePrevClick}>
+           <img id="previous" src={previous} alt="previous button"/>
          </button>
-         <button id="play-pause" onClick={this.props.handleSongClick} >
-           <span className={this.props.isPlaying ? "icon ion-md-pause" : "icon ion-md-play"}></span>
+
+         <button className="play-pause" onClick={this.props.handleSongClick} >
+            {this.props.isPlaying ? <img className="play" src={play} alt="play-button"/> : <img className="pause" src={pause} alt="pause-button"/>}
          </button>
-         <button id="next" onClick={this.props.handleNextClick}>
-           <span className="icon ion-md-skip-forward"></span>
+
+         <button className="next" onClick={this.props.handleNextClick}>
+           <img id="next" src={next} alt="next-button"/>
          </button>
        </section>
-       <section id="time-control">
+
+       <section className="time-control">
        <div className="current-time">{this.props.currentTime}</div>
          <input
            type="range"
@@ -28,8 +45,9 @@ class PlayerBar extends Component {
          />
          <div className="total-time">{this.props.formatTime(this.props.duration)}</div>
         </section>
-        <section id="volume-control">
-             <div className="icon ion-md-volume-low">{this.props.currentVolume}</div>
+
+        <section className="volume-control">
+             <img className="volume_low" src={volume_low} alt="volume low button"{...this.props.currentVolume}/>
              <input
              type="range"
              className="seek-bar"
@@ -39,9 +57,12 @@ class PlayerBar extends Component {
              step="0.01"
              onChange={this.props.handleVolumeChange}
              />
-             <div className="icon ion-md-volume-high"></div>
+             <img className="volume_high" src={volume_high} alt="volume high button"/>
            </section>
-          </section>
+
+        </section>
+      </section>
+
     );
   }
 }
