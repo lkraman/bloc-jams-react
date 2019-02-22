@@ -1,31 +1,26 @@
-.nav-button {
-color: #666;
-position: relative;
-font-size: 2.5rem;
-line-height: 26px;
-padding: 1.5rem;
-border-radius: 9px;
-background-color: #D3D3D3;
-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2
-  );
-border: 2px solid #D3D3D3;
-z-index: 5;
+.nav-bar {
+  background-color: #3d3852;
+   overflow: hidden;
 }
 
-.nav-button:hover {
-background: #A9A9A9;
-}
-.nav-button:active {
-background: #D3D3D3;
+.nav-bar .nav-bar-link {
+
+  float: left;
+  display: grid;
+  grid-gap: 10px;
+  color: #dbd9e2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-#landing-button {
-top: 45rem;
+.nav-bar a:hover {
+  background-color: #dbd9e2;
+  color: black;
 }
 
-#library-button
-{
-position: relative;
-bottom: -45rem;
-right: -40rem;
+.active {
+  background-color: #4CAF50;
+  color: white;
 }
