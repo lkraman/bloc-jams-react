@@ -1,13 +1,20 @@
 .nav-bar {
+ position: relative;
   background-color: #3d3852;
    overflow: hidden;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
 }
 
-.nav-bar .nav-bar-link {
+.nav-bar-logo {
+  background-image: url(/images/bloc_jams_logo.png) no repeat;
+  width: 4rem;
+  margin: .5rem;
+}
 
-  float: left;
-  display: grid;
-  grid-gap: 10px;
+.nav-bar-link {
   color: #dbd9e2;
   text-align: center;
   padding: 14px 16px;

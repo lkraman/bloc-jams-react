@@ -5,9 +5,8 @@ import concert_image from './images/concert_image.jpg';
 
 const Landing = () => (
 <section>
-    <div className="landing-container">
+    <div className="landing-container" id="overlay">
       <img className="container-image" src={concert_image} alt="woman at concert"></img>
-      <div id="overlay"></div>
     </div>
 
   <section className="selling-points">

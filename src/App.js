@@ -4,6 +4,7 @@ import './App.css';
 import Landing from './components/Landing';
 import Library from './components/Library';
 import Album from './components/Album';
+import bloc_jams_logo from './components/images/bloc_jams_logo.png';
 
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
     return (
       <div className="App">
           <nav className="nav-bar">
+          <img className="nav-bar-logo" src={bloc_jams_logo} alt="bloc jams logo"></img>
             <Link className="nav-bar-link" id="link1" to='/'>Landing</Link>
             <Link className="nav-bar-link" id="link1" to='/library'>Library</Link>
           </nav>
