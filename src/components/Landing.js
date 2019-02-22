@@ -2,17 +2,17 @@ import React from 'react'
 import './Landing.css';
 
 import concert_image from './concert_image.jpg';
-import bloc_jams_logo from './bloc_jams_logo.png';
+
 
 
 const Landing = () => (
-  <section className="container">
+  <section className="landing-container">
     <div className="hero">
-      <div src={concert_image} alt="concert image"></div>
-      <div className="hero-overlay"></div>
+      <img className="hero-image" src={concert_image} alt="woman at concert"></img>
+      <img className="hero-overlay" alt=""></img>
 
   <h1 className="hero-title">Bloc Jams | Turn the music up!</h1>
-  <div className="landing-page-logo" src={bloc_jams_logo} alt="bloc jams logo"></div>
+
 
   <section className="selling-points">
     <div className="point">

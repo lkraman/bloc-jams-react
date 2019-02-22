@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 //import { Link } from 'react-router-dom';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
-import './Album.css';
+import './scripts/Album.css';
 
 
 class Album extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './PlayerBar.css';
+import './scripts/PlayerBar.css';
 import bloc_jams_logo from './bloc_jams_logo.png'
 import play from './play.png'
 import pause from './pause.png'

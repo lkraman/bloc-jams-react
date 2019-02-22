@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import albumData from './../data/albums';
-import './Library.css'
+import './scripts/Library.css'
 
 
 
@@ -14,7 +14,7 @@ class Library extends Component {
   render() {
     return (
       <div className="grid-container">
-      
+
         {
           this.state.albums.map( (album, index) =>
 
