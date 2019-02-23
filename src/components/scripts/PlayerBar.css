@@ -59,11 +59,7 @@ background:url(/pause.png) no-repeat;
   position: absolute;
   bottom: 5%;
   margin: auto;
-<<<<<<< HEAD:src/components/PlayerBar.css
-  right: 2rem;
-=======
   right: 1rem;
->>>>>>> checkpoint-bloc-jams-react-styling:src/components/scripts/PlayerBar.css
  background:url(/images/volume-high.png) no-repeat;
 }
 

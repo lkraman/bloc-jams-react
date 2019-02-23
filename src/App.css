@@ -1,10 +1,11 @@
 .nav-bar {
-<<<<<<< HEAD
+ position: relative;
   background-color: #3d3852;
    overflow: hidden;
    display: flex;
    justify-content: flex-start;
    align-items: center;
+
 }
 
 .nav-bar-logo {
@@ -29,18 +30,4 @@
 .active {
   background-color: #4CAF50;
   color: white;
-.nav-button:active {
-background: #D3D3D3;
-}
-
-#landing-button {
-top: 45rem;
-}
-
-#library-button
-{
-position: relative;
-bottom: -45rem;
-right: -40rem;
->>>>>>> Stashed changes
 }

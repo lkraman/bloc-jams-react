@@ -1,22 +1,4 @@
 import React from 'react'
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-import './Landing.css';
-
-import concert_image from './concert_image.jpg';
-
-
-
-const Landing = () => (
-  <section className="landing-container">
-    <div className="hero">
-      <img className="hero-image" src={concert_image} alt="woman at concert"></img>
-      <img className="hero-overlay" alt=""></img>
-
-  <h1 className="hero-title">Bloc Jams | Turn the music up!</h1>
-
-=======
 import './scripts/Landing.css';
 import concert_image from './images/concert_image.jpg';
 
@@ -26,35 +8,6 @@ const Landing = () => (
     <div className="landing-container" id="overlay">
       <img className="container-image" src={concert_image} alt="woman at concert"></img>
     </div>
->>>>>>> checkpoint-bloc-jams-react-styling
-=======
-import './Landing.css';
-
-import concert_image from './concert_image.jpg';
-import bloc_jams_logo from './bloc_jams_logo.png';
-
-
-const Landing = () => (
-=======
-import './Landing.css';
-
-import concert_image from './concert_image.jpg';
-import bloc_jams_logo from './bloc_jams_logo.png';
-
-
-const Landing = () => (
->>>>>>> Stashed changes
-  <section className="container">
-    <div className="hero">
-      <div src={concert_image} alt="concert image"></div>
-      <div className="hero-overlay"></div>
-
-  <h1 className="hero-title">Bloc Jams | Turn the music up!</h1>
-  <div className="landing-page-logo" src={bloc_jams_logo} alt="bloc jams logo"></div>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
   <section className="selling-points">
     <h1 className="hero-title">Bloc Jams | Turn the music up!</h1>
@@ -73,26 +26,7 @@ const Landing = () => (
       <p className="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
     </div>
     </section>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    </div>
-    </section>
-
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
   </section>
->>>>>>> checkpoint-bloc-jams-react-styling
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 );
 

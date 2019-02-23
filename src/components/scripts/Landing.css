@@ -1,42 +1,3 @@
-<<<<<<< HEAD
-/*sizing, flexbox, text*/
-.landing-container {
-  position: absolute;
-  width: 100%;
-  z-index: -20;
-}
-
-
-
-.container-image {
-  position: relative;
-  margin-top: -5rem;
-  width: 100%;
-  background-image: url(/images/concert_image.jpg);
-  z-index: -10;
-}
-
-#overlay {
-position: relative;
-background-color: #08AEEA;
-background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 60%, #ffffff 95%, #ffffff 99%);
-z-index: 0;
-}
-
-.hero-title {
-position: relative;
-  font-size: 5rem;
-  top: 10%;
-  color: blue;
-  z-index: 1;
-}
-
-
-.selling-points {
-  position: relative;
-  font-size: 3rem;
-  text-align: justify;
-=======
 
 
 .container-image {
@@ -54,7 +15,7 @@ position: relative;
 
 h1 {
   position: relative;
-  font-family: Chivo; 
+  font-family: Chivo;
   font-size: 5rem;
     color: #ea3772;
     z-index: 1;
@@ -69,21 +30,11 @@ h1 {
   font-size: 3rem;
   line-height: 1;
   text-align: center;
->>>>>>> checkpoint-bloc-jams-react-styling
   color: #ffffff;
   text-shadow: 2px 2px 2px #656565;
   z-index: 1;
 
 }
-<<<<<<< HEAD
-
-.point-description {
-  position: relative;
-  font-size: 1.5rem;
-  text-align: justify;
-  color: #ffffff;
-  z-index: 2;
-=======
 .point-description {
     position: relative;
     font-size: 2rem;
@@ -91,5 +42,4 @@ h1 {
     line-height: .5;
     color: #ffffff;
     z-index: 2;
->>>>>>> checkpoint-bloc-jams-react-styling
 }
