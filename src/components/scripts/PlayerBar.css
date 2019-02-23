@@ -9,7 +9,7 @@
 
 .play-pause{
 position: absolute;
-bottom: 25%;
+bottom: 50%;
 margin: auto;
 right: 20%;
 background:url(/play.png) no-repeat;
@@ -19,7 +19,7 @@ background:url(/pause.png) no-repeat;
 
 .next{
   position: absolute;
-  bottom: 25%;
+  bottom: 50%;
   margin: auto;
   right: 5%;
   background:url(/images/Next.png) no-repeat;
@@ -28,7 +28,7 @@ background:url(/pause.png) no-repeat;
 
 .previous{
   position: absolute;
-  bottom: 25%;
+  bottom: 50%;
   margin: auto;
   right: 35%;
  background:url(/images/previous.png) no-repeat;
@@ -37,7 +37,7 @@ background:url(/pause.png) no-repeat;
 
 .time-control{
   position: absolute;
-  bottom: 40%;
+  bottom: 70%;
   margin: auto;
   right: 4%;
   width: 40%;
@@ -57,15 +57,15 @@ background:url(/pause.png) no-repeat;
 
 .volume_high {
   position: absolute;
-  bottom: -.75rem;
+  bottom: 5%;
   margin: auto;
-  right: 2rem;
+  right: 1rem;
  background:url(/images/volume-high.png) no-repeat;
 }
 
 .volume_low {
   position: absolute;
-  bottom: -.75rem;
+  bottom: 5%;
   margin: auto;
   right: 14.5rem;
  background:url(/images/player-bar-images/volume-low.png) no-repeat;
@@ -73,8 +73,8 @@ background:url(/pause.png) no-repeat;
 
 .volume-control {
   position: absolute;
-  bottom: 10%;
+  bottom: 25%;
   margin: auto;
-  right: -1%;
+  right: 1%;
   width: 40%;
 }

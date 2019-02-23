@@ -7,6 +7,7 @@
 }
 
 .album-container {
+  top: 10%;
   position: relative;
   width: 100%;
   grid-row: row 2;
