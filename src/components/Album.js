@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 //import { Link } from 'react-router-dom';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
+<<<<<<< Updated upstream
 import './scripts/Album.css';
 <<<<<<< HEAD
 
 =======
 >>>>>>> checkpoint-bloc-jams-react-styling
+=======
+import './Album.css';
+
+>>>>>>> Stashed changes
 
 class Album extends Component {
   constructor(props) {

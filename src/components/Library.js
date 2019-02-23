@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import albumData from './../data/albums';
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 import './scripts/Library.css'
 
@@ -8,6 +9,11 @@ import './scripts/Library.css'
 =======
 import './scripts/Library.css';
 >>>>>>> checkpoint-bloc-jams-react-styling
+=======
+import './Library.css'
+
+
+>>>>>>> Stashed changes
 
 class Library extends Component {
   constructor(props) {
@@ -17,6 +23,7 @@ class Library extends Component {
 
   render() {
     return (
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <div className="grid-container">
 
@@ -25,6 +32,10 @@ class Library extends Component {
       <div className="library-wrapper" id="library-wrapper">
       <div className="library-container" id="library-container">
 >>>>>>> checkpoint-bloc-jams-react-styling
+=======
+      <div className="grid-container">
+      
+>>>>>>> Stashed changes
         {
           this.state.albums.map( (album, index) =>
 
@@ -39,6 +50,7 @@ class Library extends Component {
               <div>{album.title}</div>
               <div>{album.artist}</div>
               <div>{album.songs.length} songs</div>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               </div>
             </Link>
@@ -61,6 +73,18 @@ class Library extends Component {
       </div>
       </section>
 >>>>>>> checkpoint-bloc-jams-react-styling
+=======
+              </div>
+            </Link>
+            </div>
+
+        )
+      }
+
+      </div>
+
+
+>>>>>>> Stashed changes
     );
   }
 }
