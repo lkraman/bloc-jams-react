@@ -3,11 +3,16 @@ import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import './scripts/Album.css';
 <<<<<<< HEAD
 
 =======
 >>>>>>> checkpoint-bloc-jams-react-styling
+=======
+import './Album.css';
+
+>>>>>>> Stashed changes
 =======
 import './Album.css';
 

@@ -12,11 +12,13 @@ import bloc_jams_logo from './components/images/bloc_jams_logo.png';
 
 
 
+
 class App extends Component {
   render() {
     return (
 
       <div className="App">
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           <nav className="nav-bar">
           <img className="nav-bar-logo" src={bloc_jams_logo} alt="bloc jams logo"></img>
@@ -24,12 +26,17 @@ class App extends Component {
             <Link className="nav-bar-link" id="link1" to='/library'>Library</Link>
           </nav>
 =======
+=======
+>>>>>>> Stashed changes
 
             <Link to='/'></Link>
 
 
             <Link to="/library"></Link>
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         <main>
         <button className="nav-button" id="library-button">

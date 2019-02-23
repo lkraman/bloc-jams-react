@@ -1,5 +1,6 @@
 import React from 'react'
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 import './Landing.css';
 
@@ -34,6 +35,15 @@ import bloc_jams_logo from './bloc_jams_logo.png';
 
 
 const Landing = () => (
+=======
+import './Landing.css';
+
+import concert_image from './concert_image.jpg';
+import bloc_jams_logo from './bloc_jams_logo.png';
+
+
+const Landing = () => (
+>>>>>>> Stashed changes
   <section className="container">
     <div className="hero">
       <div src={concert_image} alt="concert image"></div>
@@ -41,6 +51,9 @@ const Landing = () => (
 
   <h1 className="hero-title">Bloc Jams | Turn the music up!</h1>
   <div className="landing-page-logo" src={bloc_jams_logo} alt="bloc jams logo"></div>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
   <section className="selling-points">
@@ -61,7 +74,10 @@ const Landing = () => (
     </div>
     </section>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     </div>
@@ -69,9 +85,12 @@ const Landing = () => (
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
   </section>
 >>>>>>> checkpoint-bloc-jams-react-styling
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 

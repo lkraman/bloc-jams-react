@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import './scripts/PlayerBar.css';
 <<<<<<< HEAD
+=======
+import './PlayerBar.css';
+>>>>>>> Stashed changes
 =======
 import './PlayerBar.css';
 >>>>>>> Stashed changes
@@ -13,6 +17,7 @@ import previous from './previous.png'
 import volume_high from './volume_high.png'
 import volume_low from './volume_low.png'
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 import bloc_jams_logo from './images/bloc_jams_logo.png'
 import play from './images/play.png'
@@ -22,6 +27,8 @@ import previous from './images/previous.png'
 import volume_high from './images/volume_high.png'
 import volume_low from './images/volume_low.png'
 >>>>>>> checkpoint-bloc-jams-react-styling
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
