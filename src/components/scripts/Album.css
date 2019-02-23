@@ -1,4 +1,4 @@
-.wrapper {
+.album-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -6,7 +6,8 @@
 
 }
 
-.container {
+.album-container {
+  top: 10%;
   position: relative;
   width: 100%;
   margin-top: 2rem;

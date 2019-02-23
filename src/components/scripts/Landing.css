@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*sizing, flexbox, text*/
 .landing-container {
   position: absolute;
@@ -35,11 +36,46 @@ position: relative;
   position: relative;
   font-size: 3rem;
   text-align: justify;
+=======
+
+
+.container-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(/images/concert_image.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  }
+
+
+
+h1 {
+  position: relative;
+  font-family: Chivo; 
+  font-size: 5rem;
+    color: #ea3772;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: -50rem;
+}
+
+
+.point-title {
+  position: relative;
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
+>>>>>>> checkpoint-bloc-jams-react-styling
   color: #ffffff;
   text-shadow: 2px 2px 2px #656565;
   z-index: 1;
 
 }
+<<<<<<< HEAD
 
 .point-description {
   position: relative;
@@ -47,4 +83,13 @@ position: relative;
   text-align: justify;
   color: #ffffff;
   z-index: 2;
+=======
+.point-description {
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    line-height: .5;
+    color: #ffffff;
+    z-index: 2;
+>>>>>>> checkpoint-bloc-jams-react-styling
 }

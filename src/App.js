@@ -4,7 +4,11 @@ import './App.css';
 import Landing from './components/Landing';
 import Library from './components/Library';
 import Album from './components/Album';
+<<<<<<< HEAD
 import bloc_jams_logo from './components/bloc_jams_logo.png';
+=======
+import bloc_jams_logo from './components/images/bloc_jams_logo.png';
+>>>>>>> checkpoint-bloc-jams-react-styling
 
 
 class App extends Component {

@@ -19,14 +19,14 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	font-family: 'Chivo', sans-serif;
+	font-size: 10px;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: grid;
 }
 body {
 	line-height: 1;
@@ -50,6 +50,7 @@ table {
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+
 }
 *, *:before, *:after {
   box-sizing: inherit;

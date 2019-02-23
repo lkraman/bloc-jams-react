@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './scripts/PlayerBar.css';
+<<<<<<< HEAD
 import bloc_jams_logo from './bloc_jams_logo.png'
 import play from './play.png'
 import pause from './pause.png'
@@ -7,6 +8,15 @@ import next from './next.png'
 import previous from './previous.png'
 import volume_high from './volume_high.png'
 import volume_low from './volume_low.png'
+=======
+import bloc_jams_logo from './images/bloc_jams_logo.png'
+import play from './images/play.png'
+import pause from './images/pause.png'
+import next from './images/next.png'
+import previous from './images/previous.png'
+import volume_high from './images/volume_high.png'
+import volume_low from './images/volume_low.png'
+>>>>>>> checkpoint-bloc-jams-react-styling
 
 
 

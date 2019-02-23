@@ -1,9 +1,17 @@
 .nav-bar {
+<<<<<<< HEAD
+=======
+ position: relative;
+>>>>>>> checkpoint-bloc-jams-react-styling
   background-color: #3d3852;
    overflow: hidden;
    display: flex;
    justify-content: flex-start;
    align-items: center;
+<<<<<<< HEAD
+=======
+
+>>>>>>> checkpoint-bloc-jams-react-styling
 }
 
 .nav-bar-logo {
