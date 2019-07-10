@@ -18,7 +18,7 @@ class PlayerBar extends Component {
       <img className="bloc-logo" src={bloc_jams_logo} alt="Bloc Jams Logo" />
         <section className="player-bar-control-box">
 
-        <section className="main-buttons">
+        <section className="btn-group" role="group" aria-label="Basic example">
          <button className="previous" onClick={this.props.handlePrevClick}>
            <img id="previous" src={previous} alt="previous button"/>
          </button>

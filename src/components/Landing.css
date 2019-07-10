@@ -8,7 +8,7 @@
 
 
 .hero-image {
-  margin-top: -5rem;
+  margin-top: 0rem;
   width: 100%;
   background-image: url(/images/concert_image.jpg);
   z-index: -10;

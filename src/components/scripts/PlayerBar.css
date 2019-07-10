@@ -6,7 +6,9 @@
  height:4.5rem;
 
 }
-
+.btn-group {
+  position: absolute;
+}
 .play-pause{
 position: absolute;
 bottom: 50%;
